@@ -35,7 +35,7 @@ def notification(data_send_email):
     azure = EmailSender(data_send_email['message'], data_send_email['subject'])
     if azure.send_email():
         response = {
-            "message": "Dato correctamente ubicado"
+            "message": "El dato fue agregado y el correo enviado"
         }
     return response
 
