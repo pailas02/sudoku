@@ -2,6 +2,7 @@ from azure.communication.email import EmailClient
 from dotenv import load_dotenv
 import os
 
+
 class EmailSender:
     def __init__(self, message, subject_line):
         self.message = message
