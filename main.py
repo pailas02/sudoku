@@ -26,7 +26,7 @@ def sudoku():
             response["message"] = notification(data_send_email)
     else:
         response = {
-            "message": "El dato no puede ser ubicado, cambie de posición"
+            "message": "El dato no se puede ubicar, cambie de posición"
         }
     return jsonify(response), 400 if response["message"] == "Number can't fit" else 200
 
